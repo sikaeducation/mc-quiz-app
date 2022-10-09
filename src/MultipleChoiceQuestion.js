@@ -5,7 +5,7 @@ export default function MultipleChoiceQuestion({ respond, question }){
       <p>{prompt}</p>
       <ul>
         {options.map(option => (
-          <li key={`${question.id}-${option}`}>
+          <li key={`${id}-${option}`}>
             <button
               onClick={() => isAnswered || respond(id, option)}
             >{option}</button>
